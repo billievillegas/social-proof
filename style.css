@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  background-color: var(--White);
+  padding: 20px;
+
+  background-image: url("./images/bg-pattern-top-mobile.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.header h1 {
+  color: var(--Very-Dark-Magenta);
+  font-weight: 700px;
+  margin: 25px;
+}
+
+.header p {
+  color: var(--Dark-Grayish-Magenta);
+  font-weight: 500px;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.ratings .card {
+  background-color: var(--Light-Grayish-Magenta);
+  border-radius: 8px;
+  margin: 15px 10px;
+  padding: 10px;
+}
+
+.ratings .card p {
+  color: var(--Very-Dark-Magenta);
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+.feedback {
+  margin-top: 40px;
+  background-image: url("./images/bg-pattern-bottom-mobile.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.feedback .card {
+  background-color: var(--Very-Dark-Magenta);
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+.feedback .card img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin-right: 30px;
+}
+
+.feedback .card h4 {
+  color: #fff;
+  margin-top: 5px;
+  text-align: none;
+}
+
+.feedback .card h6 {
+  color: var(--Soft-Pink);
+}
+
+.feedback .card p {
+  margin-top: 25px;
+  color: var(--Light-Grayish-Magenta);
+  font-size: 13px;
+}
+
+@media (min-width: 1025px) {
+  body {
+    background-image: url("./images/bg-pattern-top-desktop.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header {
+    border: 2px black solid;
+    text-align: left;
+    width: 40vw;
+    font-size: 2em;
+  }
+
+  .header h1 {
+    font-size: 2em;
+  }
+  .header p {
+    font-size: 1.1em;
+  }
+
+  .ratings {
+    border: 2px black solid;
+    width: 50vw;
+    font-size: 1.3em;
+    padding: 40px;
+  }
+  .ratings .card {
+    display: flex;
+    width: 40vw;
+    height: ;
+  }
+  .ratings .card img {
+    margin: 5px;
+  }
+  .ratings .card p {
+    margin-left: 20px;
+  }
+
+  .c-2 {
+    border: 2px solid green;
+  }
+
+  .c-3 {
+    border: 2px solid red;
+  }
+
+  .feedback {
+    display: flex;
+    background-image: url("./images/bg-pattern-bottom-desktop.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  .feedback .card {
+    padding: 35px;
+  }
+}
