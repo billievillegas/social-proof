@@ -94,8 +94,6 @@ body {
 @media (min-width: 1025px) {
   body {
     background-image: url("./images/bg-pattern-top-desktop.svg");
-    background-position: top;
-    background-repeat: no-repeat;
   }
 
   .flex-container {
@@ -125,8 +123,8 @@ body {
   .ratings .card {
     display: flex;
     width: 40vw;
-    height: ;
   }
+
   .ratings .card img {
     margin: 5px;
   }
@@ -145,8 +143,6 @@ body {
   .feedback {
     display: flex;
     background-image: url("./images/bg-pattern-bottom-desktop.svg");
-    background-position: bottom;
-    background-repeat: no-repeat;
   }
 
   .feedback .card {
